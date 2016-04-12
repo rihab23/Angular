@@ -2,6 +2,18 @@ var services = angular.module('NetworkWebApp.services', ['ngResource']);
 
 //var baseUrl = 'http://localhost:18080/pi_twin-web/rest';
 
+services.factory('InstagramFactory', ['$http', function ($http){
+
+	var dataFactory = {};
+
+	dataFactory.photos = function (){
+		return $http.get('http://localhost:3000/instagram/json');
+	};
+
+	return dataFactory;
+
+}]);
+
 /*
 services.factory('rewardsFactory', function ($resource) {
 	return $resource(baseUrl + '/flights/2', {}, {

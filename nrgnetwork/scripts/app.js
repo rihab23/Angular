@@ -14,7 +14,7 @@ angular.module('NetworkWebApp', [
     $routeProvider.when("/discover", {templateUrl: "partials/discover.html", controller: "DiscoverCtrl"});
     // discover
     $routeProvider.when("/discover/people", {templateUrl: "partials/people.html", controller: "PeopleCtrl"});
-    $routeProvider.when("/discover/gallerie", {templateUrl: "partials/gallery.html", controller:"GallerieCtrl"});
+    $routeProvider.when("/discover/gallerie", {templateUrl: "partials/gallery.html", controller:"InstagramCtrl"});
     $routeProvider.when("/discover/explore", {templateUrl: "partials/search.html", controller: "SearchCtrl"});
   
   $routeProvider.otherwise({redirectTo: '/home'});
